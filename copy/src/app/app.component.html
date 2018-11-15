@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    Copy to clipboard Example
+  </h1>
+  <div style="margin-bottom: 15px;">
+    <button class="btn info" placement="top" ngbTooltip="copy enquiry details" style="padding: 3px;font-size: 15px" (cbOnSuccess)="onSuccess()" ngxClipboard [cbContent]="content" (cbOnError)="onCopyFailure()">
+      <span>copy</span>
+    </button>
+  </div>
+  
+  <div style="margin-bottom: 30px;">{{content}}</div>
+  <div>
+    <textarea></textarea>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
